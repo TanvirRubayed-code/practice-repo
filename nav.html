@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            height: 40px;
+            background-color: lightgrey;
+            line-height: 20px;
+        }
+
+        nav li {
+            list-style-type: none;
+            padding: 10px 20px;
+        }
+
+        nav>ul>li {
+            float: left;
+        }
+
+        nav a {
+            text-decoration: none;
+
+        }
+
+        nav li:hover {
+            background-color: grey;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color: lightgrey;
+            padding: 0;
+        }
+        nav > ul > li:hover > ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a>
+                <ul class="dropdown">
+                    <li><a href="#"></a>Option 1</li>
+                    <li><a href="#"></a>Option 2</li>
+                    <li><a href="#"></a>Option 3</li>
+                </ul>
+            </li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <h1>Hi there . This is the first nav bar </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro minus molestiae officia vel itaque cupiditate
+        pariatur possimus ratione ab, nobis dolor tempora impedit sed mollitia error? Iure, sequi eum?</p>
+</body>
+
+</html>
